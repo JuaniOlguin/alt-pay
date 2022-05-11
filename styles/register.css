@@ -1,0 +1,30 @@
+@media(min-width: 1400px){
+    body{
+        background-image: url('../assets/img/register/03.jpg');
+    }
+}
+
+body{
+    background-repeat: no-repeat;
+}
+.container-form-register{
+    margin-top: 3rem;
+    max-width: 600px!important;
+}
+.form-title{
+    color: #26547c;
+}
+form{
+    color: #26547c!important;
+}
+.btn-register{
+    background-color: #00D2B9ff!important;
+    color: white!important;
+    padding: .75rem!important;
+    max-width: 250px!important;
+}
+.btn-register:hover{
+    background-color: white!important;
+    border: 1px solid #00D2B9ff!important;
+    color: #00D2B9ff!important;
+}

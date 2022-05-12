@@ -10,6 +10,7 @@ body{
 .container-form-register{
     margin-top: 3rem;
     max-width: 600px!important;
+    min-height: 60vh!important;
 }
 .form-title{
     color: #26547c;

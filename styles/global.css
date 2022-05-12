@@ -10,6 +10,9 @@
     }
 }
 @media(max-width: 768px){
+    .logo-nav{
+        width: 100px;
+    }
     .widget{
         align-items: start!important;
     }

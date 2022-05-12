@@ -4,6 +4,15 @@
 --turquoise: #00D2B9ff;
 --caribbean-green: #05D69Fff;
 */
+
+@media(min-width: 768px){
+    .nav-item{
+        margin: 0 1.5rem!important;
+    }
+}
+
+
+
 body{
     font-family: 'Poppins', sans-serif!important;
     background-color: whitesmoke;

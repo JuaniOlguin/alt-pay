@@ -23,6 +23,7 @@ body{
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 2rem 5vw!important;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -94,45 +95,109 @@ main .sidebar {
   margin-left: 85px;
   transition: margin-left 0.5s;
 }
-.currency-card{
-  background-color: #c2c2c259;
+
+.dashboard-card{
+  background-color: #FFF;
+  margin: 0 1rem;
   padding: 1rem 2rem!important;
+  box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);
+}
+.dashboard-card-title{
+  height: 15%;
+}
+.balance-card{
   color: #26547c;
-  border-radius: 1rem;
+  text-align: center;
 }
-.currency-card-title{
-  background-color: white;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
-.currency-card-body{
-  background-color: white;
-  padding: .5rem;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
-.currency-button-list{
+.balance-total{
   display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
 }
-.currency-card-link{
-  text-decoration: none;
-  color: #26547c;
-  padding: .5rem;
-  border: 1px solid #fff;
-  border-radius: 1rem;
+.balance-ars{
+  letter-spacing: .8rem;
+  font-weight: 300;
+  color: #B2B2B2;
 }
-.currency-card-link:hover{
-  text-decoration: underline 1px #26547c;
-  color: #26547c;
+.legal-text{
+  display: flex;
+  font-size: x-small;
+  color: #989898;
 }
 
-small{
-  /* color: rgba(0, 0, 0, 0.589); */
-  color: #00D2B9ff;
+.monedas-card{
+  color: #26547c;
+  text-align: center;
+}
+.monedas-list{
+  padding: 0 2rem;
+  overflow-y: scroll;
+  max-height: 450px;
+}
+.monedas-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 .5rem;
+}
+.monedas-list-item:hover{
+  background-color: #bbbbbb;
+  color: white;
+  cursor: pointer;
+}
+.monedas-list-item-active{
+  background-color: #00A0A8;
+  color: white;
+}
+.monedas-list-item-active:hover{
+  background-color: #00A0A8;
+  color: white;
+}
+
+.detalle-card{
+  color: white;
+  background-image: linear-gradient(135deg, rgb(38,84,124), rgb(0,160,168));
+}
+
+.balance-detalle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  margin-top: 3rem;
+}
+
+.grid-detalle{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.btn-grid-detalle{
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);
+  color: #26547c;
+  margin: .7rem;
+  min-width: 150px;
+}
+.btn-grid-detalle:hover{
+  background-color: rgb(0,160,168);
+  color: #FFF;
+}
+.btn-grid-detalle-active{
+  background-color: #26547c;
+  color: #FFF;
+  box-shadow: none;
+}
+.btn-grid-detalle-active:hover{
+  background-color: #26547c;
+  color: #FFF;
+  box-shadow: none;
 }
 
 @media screen and (max-height: 450px) {
@@ -161,17 +226,21 @@ small{
   .hidden-desktop{
     display: flex;
   }
-  .currency-button-list{
-    flex-direction: column;
-    text-align: center;
-    margin-top: 0!important;
+  .dashboard-content{
+    padding: 1rem 0!important;
   }
-  .currency-button-list li{
-    margin-top: 1rem;
+  .dashboard-card{
+    width: 100%!important;
+    margin: 1rem 0!important;
+    height: fit-content!important;
+
   }
-  .currency-card-link{
-    border: none;
-    padding: none!important;
+  .balance-card{
+    max-height: fit-content!important;
+    padding: 0 1.5rem!important;
+  }
+  .balance-total{
+    height: 300px;
   }
 }
 

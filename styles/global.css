@@ -70,7 +70,14 @@ nav ul{
     border-bottom:#26547c 1px solid;
 }
 
+/*Wave*/
+
+.container-footer{
+    position: relative!important;
+}
+
 /*FOOTER*/
+footer{ position: relative!important; }
 footer .main-footer{  padding: 20px 0;  background: #26547c;}
 footer ul{  padding-left: 0;  list-style: none;}
 

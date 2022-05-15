@@ -240,7 +240,8 @@ main .sidebar {
     padding: 0 1.5rem!important;
   }
   .balance-total{
-    height: 300px;
+    min-height: 200px!important;
+    height: 100px!important;
   }
 }
 

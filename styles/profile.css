@@ -1,0 +1,42 @@
+
+.container-profile{
+    max-width: fit-content!important;
+    padding: 2rem 2rem!important;
+    margin: 1rem 0!important;
+    background-color: #FFF;
+    color: #26547c;
+    box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);  
+}
+.profile-subtitle{
+    display: flex;
+    align-items: center;
+}
+.campo-nombre{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+.boton-edit{
+    color: #26547c!important;
+    display: flex;
+    align-items: center;
+    border: 2px!important;
+    padding: .5rem!important;
+    margin: 0 1rem;
+    border-radius: .5rem!important;
+}
+.boton-edit:hover{
+    color: #FFF!important;
+}
+table{
+    color: #26547c!important;
+}
+
+@media (max-width: 768px) {
+    .container-profile{
+        box-shadow: none;
+    }
+    .col-datos-bancarios{
+        padding: 1rem!important;
+    }
+}

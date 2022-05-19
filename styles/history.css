@@ -1,0 +1,14 @@
+table{
+    color: #26547c!important;
+    overflow-x: scroll!important;
+}
+thead{
+    border-bottom: 2px #26547c8a solid!important;
+}
+td{
+    padding: 1rem!important;
+}
+.table-container{
+    background-color: #FFF;
+    box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);
+}

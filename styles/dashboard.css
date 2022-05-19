@@ -215,6 +215,7 @@ main .sidebar {
       width: 0!important;
   }
   body{
+      padding: 1rem!important;
       margin-left: 0!important;
   }
   .hidden-mobile{
@@ -226,6 +227,12 @@ main .sidebar {
   .hidden-desktop{
     display: flex;
   }
+  .dashboard-title{
+    padding-left: 1rem!important;
+  }
+  .dashboard-title div h1{
+    font-size: 1.7rem!important;
+  }
   .dashboard-content{
     padding: 1rem 0!important;
   }
@@ -233,7 +240,7 @@ main .sidebar {
     width: 100%!important;
     margin: 1rem 0!important;
     height: fit-content!important;
-
+    box-shadow: none;
   }
   .balance-card{
     max-height: fit-content!important;
@@ -242,6 +249,9 @@ main .sidebar {
   .balance-total{
     min-height: 200px!important;
     height: 100px!important;
+  }
+  td{
+    padding: 1rem!important;
   }
 }
 

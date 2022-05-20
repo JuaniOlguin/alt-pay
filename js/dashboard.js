@@ -1,16 +1,8 @@
-var mini = true;
+var sidebarBtn = document.getElementById('sidebarBtn')
+var sidebar = document.getElementById('sidebar')
+var sidebarToggler = document.getElementById('sidebarToggler')
 
-function toggleSidebar() {
-  if (mini) {
-    // console.log("opening sidebar");
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    this.mini = false;
-  } else {
-    // console.log("closing sidebar");
-    document.getElementById("mySidebar").style.width = "85px";
-    document.getElementById("main").style.marginLeft = "85px";
-    this.mini = true;
-  }
-}
-
+sidebarBtn.addEventListener("click", () => {
+  sidebarToggler.classList.toggle("active-content")
+  sidebar.classList.toggle("active-sidebar")
+})

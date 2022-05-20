@@ -12,9 +12,12 @@
     align-items: center;
 }
 .campo-nombre{
-    display: flex;
     align-items: center;
     padding: .5rem;
+}
+.campo-nombre input{
+    color: #26547c;
+    border: 1px solid #26547c21;
 }
 .boton-edit{
     color: #26547c!important;

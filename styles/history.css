@@ -7,8 +7,22 @@ thead{
 }
 td{
     padding: 1rem!important;
+    align-items: center;
 }
 .table-container{
     background-color: #FFF;
     box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);
+}
+.btn{
+    border: 2px #26547c solid!important;
+    color:#26547c!important;
+}
+.btn:hover{
+    background-color: #26547c!important;
+    color: white!important;
+}
+.export-svg-logo{
+    color:#26547c!important;
+    text-decoration: none;
+    height: fit-content;
 }

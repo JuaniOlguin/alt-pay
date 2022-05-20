@@ -1,0 +1,102 @@
+body{
+    overflow-x: hidden;
+}
+
+.main-content{
+    min-height: 100vh;
+    padding: 0!important
+}
+.section-altpay{
+    height: 100vh;
+    background-color: #26547c;
+}
+.section-altpay-container{
+    height: 100vh;
+    padding: 0 5vw!important;
+}
+.logo-altpay{
+    width: 500px;
+}
+.text-logo{
+    color: white;
+}
+
+.section-login{
+    height: 100vh;
+    background-image: url("../assets/section-login.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.button{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    max-width: fit-content;
+}
+.button-register{
+    padding: 1.5rem;
+    background-color: #26547c;
+    color: #FFF;
+}
+.button-register:hover{
+    background-color: #FFF;
+    color: #26547c;
+}
+.button-login{
+    padding: 1.5rem;
+    background-color: #FFF;
+    color: #26547c;
+}
+.button-login:hover{
+    background-color: #26547c;
+    color: #FFF;
+}
+
+.section-info{
+    background-color: #26547c;
+    color: #26547c;
+}
+.col-info{
+    background-image: url("../assets/section-info.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.section-info-container{
+    background-color: #FFF;
+    padding: 0!important;
+}
+.col-login:nth-child(1){
+    justify-content: end;
+}
+.col-login:nth-child(2){
+    justify-content: center;
+}
+.col-login:nth-child(3){
+    justify-content: start;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .col-login{
+        margin-bottom: 1rem;
+    }
+    .col-login:nth-child(1){
+        justify-content: center;
+    }
+    .col-login:nth-child(2){
+        justify-content: center;
+    }
+    .col-login:nth-child(3){
+        justify-content: center;
+    }
+    .col-info{
+        display: none!important;
+    }
+    .logo-altpay{
+        width: 200px;
+    }
+}

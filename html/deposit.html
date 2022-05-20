@@ -19,9 +19,12 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-light navbar-expand-lg navbar-light">
         <div class="container-nav d-flex container-fluid justify-content-between">
-            <a class="navbar-brand p-3" href="#">
-                <img src="../assets/img/logo-altpay.png.png" alt="" width="150px" srcset="" class="logo-nav">
-            </a>
+            <div class="d-flex align-items-center" id="sidebarToggler">
+                <button class="btn d-flex align-items-center" id="sidebarBtn"><span class="material-icons">menu</span></button>
+                <a class="navbar-brand p-3" href="#">
+                    <img src="../assets/img/logo-altpay.png.png" alt="" width="150px" srcset="" class="logo-nav">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,10 +38,17 @@
                             <a class="nav-link" aria-current="page" href="../html/dashboard.html">Dashboard</a>
                         </li>
                         <li class="nav-item hidden-mobile">
-                            <a class="nav-link" aria-current="page" href="../html/deposit.html">Depositar</a>
-                        </li>
-                        <li class="nav-item hidden-mobile">
-                            <a class="nav-link" aria-current="page" href="../html/retire.html">Retirar</a>
+                            <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="sidebarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Botón de Pago
+                            </a>
+                            <ul class="dropdown-menu w-100" aria-labelledby="sidebarDropdown">
+                                <li>
+                                    <a href="#" class="dropdown-item">Nuevo botón</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Pendientes</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item hidden-mobile">
                             <a class="nav-link" aria-current="page" href="../html/history.html">Historial</a>
@@ -47,7 +57,33 @@
                             <a class="nav-link" aria-current="page" href="../html/login.html">Cerrar sesión</a>
                         </li>
                         <li class="nav-item align-items-center hide-on-mobile">
-                            <a href="#" class="text-center nav-button"><span><i class="material-icons m-0">notifications</i></a>
+                            <!-- <a href="#" class="text-center nav-button"><span><i class="material-icons m-0">notifications</i></a> -->
+                            <div class="dropdown">
+                                <a class="nav-button" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="material-icons m-0">notifications</i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink1">
+                                    <li><h6 class="dropdown-item dropdown-item-text fw-bold m-0">Notificaciones</h6></li>
+                                    <li class="">
+                                        <a href="#" class="dropdown-item">
+                                            <small>Equipo de AltPay</small>
+                                            <p>Agregamos una nueva moneda!</p>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="dropdown-item">
+                                            <small>Equipo de AltPay</small>
+                                            <p>Agregamos una nueva moneda!</p>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="dropdown-item">
+                                            <small>Equipo de AltPay</small>
+                                            <p>Agregamos una nueva moneda!</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item align-items-center hide-on-mobile">
                             <a href="#" class="text-center nav-button"><span><i class="material-icons m-0">chat</i></a>
@@ -62,28 +98,79 @@
     </nav>
    <!--NAVBAR-->
    <!--SIDEBAR-->
-   <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-    <a href="../html/profile.html" class="img logo rounded-circle mb-5" style="background-image: url(http://frontendfreecode.com/img/user.jpg);"></a>
-    <a href="../html/profile.html"><span><i class="material-icons">person</i><span class="icon-text fs-5">Perfil</span></a><br>
-    <a href="../html/dashboard.html"><span><i class="material-icons">space_dashboard</i><span class="icon-text fs-5">Dashboard</span></a><br>
-    <a href="../html/deposit.html"><span><i class="material-icons">input</i><span class="icon-text fs-5">Depositar</span></a><br>
-    <a href="../html/retire.html"><i class="material-icons">output</i><span class="icon-text fs-5">Retirar</span></a></span>
-    </a><br>
-    <a href="../html/history.html"><i class="material-icons">history</i><span class="icon-text fs-5">Historial</span></span></a><br>
-    
-  </div>
-
+    <nav class="navbar sidebar navbar-expand d-flex flex-column align-items-start" id="sidebar">
+        <a href="#" class="navbar-brand text-light mt-5">
+            <a href="../html/profile.html" class="img logo rounded-circle mb-5" style="background-image: url(http://frontendfreecode.com/img/user.jpg);"></a>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item sidebar-item w-100">
+                <a class="nav-link sidebar-link d-flex align-items-center" href="../html/profile.html">
+                    <span class="mx-4 material-icons">person</span>
+                    Perfil
+                </a>
+            </li>
+            <li class="nav-item sidebar-item w-100">
+                <a class="nav-link sidebar-link d-flex align-items-center" href="../html/dashboard.html">
+                    <span class="mx-4 material-icons">space_dashboard</span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item dropdown sidebar-item w-100">
+                <a class="nav-link sidebar-link d-flex align-items-center dropdown-toggle" href="#" id="sidebarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="mx-4 material-icons">paid</span>
+                    Botón de Pago
+                </a>
+                <ul class="dropdown-menu w-100" aria-labelledby="sidebarDropdown">
+                    <li>
+                        <a href="../html/boton-pago.html" class="dropdown-item">Nuevo botón</a>
+                    </li>
+                    <li>
+                        <a href="../html/botones-pago.html" class="dropdown-item">Pendientes</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item sidebar-item w-100">
+                <a class="nav-link sidebar-link d-flex align-items-center" href="../html/history.html">
+                    <span class="mx-4 material-icons">history</span>
+                    Historial
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!--SIDEBAR-->
-    <!-- <div id="backdownDiv" class="container-fluid backdown-div animate__animated animate__fadeOutDownBig animate__delay-1s">
-
-    </div> -->
     <div class="dashboard-content container-fluid">
         <div class="row d-flex dashboard-title">
             <div class="col-8 col-md-auto">
                 <h1 class="display-3 m-0 fw-light" style="color: #26547c;">Depositar</h1>
             </div>
             <div class="col-2 align-items-center hidden-desktop">
-                <a href="#" class="m-1" style="color: #26547c;"><span class="material-icons">notifications</span></a>
+                <!-- <a href="#" class="m-1" style="color: #26547c;"><span class="material-icons">notifications</span></a> -->
+                <div class="dropdown">
+                    <a class="nav-button" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="material-icons m-0">notifications</i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink1">
+                        <li><h6 class="dropdown-item dropdown-item-text fw-bold m-0">Notificaciones</h6></li>
+                        <li class="">
+                            <a href="#" class="dropdown-item">
+                                <small>Equipo de AltPay</small>
+                                <p>Agregamos una nueva moneda!</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="dropdown-item">
+                                <small>Equipo de AltPay</small>
+                                <p>Agregamos una nueva moneda!</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="dropdown-item">
+                                <small>Equipo de AltPay</small>
+                                <p>Agregamos una nueva moneda!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-2 align-items-center hidden-desktop">
                 <a href="#" class="m-1" style="color: #26547c;"><span class="material-icons">chat</span></a>
@@ -131,6 +218,7 @@
                 <ul>
                     <li>¿Qué es AltPay?</li>
                     <li>¿Cuáles son nuestros <a href="" target="_blank" rel="noopener noreferrer">términos y condiciones</a>?</li>
+                    <li>¿Cuáles son nuestras <a href="" target="_blank" rel="noopener noreferrer">políticas de privacidad</a>?</li>
                     <li><a href="" target="_blank" rel="noopener noreferrer">Ayuda</a></li>
                 </ul>
                 </div>

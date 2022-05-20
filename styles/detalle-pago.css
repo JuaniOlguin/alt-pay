@@ -1,0 +1,66 @@
+.dashboard-content{
+    justify-content: center;
+    align-items: center;
+}
+.container-detalle-pago{
+    width: 60%;
+}
+input{
+    max-width: 400px;
+}
+.card-metodo-pago{
+    height: fit-content;
+    background-color: #FFF;
+    box-shadow: 0 20px 25px rgba(39, 39, 39, 0.26);
+    min-width: 150px;
+    padding: 0!important;
+    border-radius: .7rem;
+    margin: 1rem 1rem;
+}
+.card-metodo-header{
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+    background-color: #eeeeee;
+    padding: 1rem;
+    border-bottom:rgba(36, 36, 36, 0.212) 1px solid
+}
+.card-metodo-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.img-metodo{
+    max-width: 100px;
+    max-height: 100px;
+    height: 100px;
+}
+h6{
+    margin:0!important;
+}
+small {
+    color:rgba(39, 39, 39, 0.26)
+}
+.card-metodo-footer{
+    display: flex;
+    justify-content: center;
+}
+.btn-pagar{
+    padding: 1rem;
+    color: #FFF;
+    background-color: #26547c;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+    font-weight: 600;
+}
+.btn-pagar:hover{
+    background-color: rgb(0,160,168);
+}
+
+@media (max-width: 768px){
+    .container-detalle-pago{
+        width: 100%;
+    }
+}

@@ -3,7 +3,7 @@
     align-items: center;
 }
 .container-detalle-pago{
-    width: 60%;
+    width: 70%;
 }
 input{
     max-width: 400px;
@@ -18,10 +18,11 @@ input{
     margin: 1rem 1rem;
 }
 .card-metodo-header{
+    color: #FFF!important;
     border-top-left-radius: .7rem;
     border-top-right-radius: .7rem;
-    background-color: #eeeeee;
-    padding: 1rem;
+    background-image: linear-gradient(135deg, rgb(38,84,124), rgb(0,160,168));
+    padding: .7rem;
     border-bottom:rgba(36, 36, 36, 0.212) 1px solid
 }
 .card-metodo-body{
@@ -31,15 +32,15 @@ input{
     padding: 10%;
 }
 .img-metodo{
-    max-width: 100px;
+    max-width: 90px;
     max-height: 100px;
-    height: 100px;
+    height: 90px;
 }
 h6{
     margin:0!important;
 }
 small {
-    color:rgba(39, 39, 39, 0.26)
+    color: #FFF;
 }
 .card-metodo-footer{
     display: flex;

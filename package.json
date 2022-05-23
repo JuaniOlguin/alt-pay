@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/JuaniOlguin/alt-pay#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.1.3",
     "mdb-ui-kit": "^4.0.0"
   }
 }

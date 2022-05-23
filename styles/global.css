@@ -76,6 +76,11 @@ nav ul{
     position: relative!important;
 }
 
+.nav-button{
+    display: flex;
+    align-items: center!important;
+    max-height: fit-content;
+}
 /*FOOTER*/
 footer .main-footer{  padding: 20px 0;  background: #26547c;}
 footer ul{  padding-left: 0;  list-style: none;}

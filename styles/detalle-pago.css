@@ -60,6 +60,26 @@ small {
     background-color: rgb(0,160,168);
 }
 
+.col-qr{
+    border: 1px solid #26547c63;
+}
+.btn-clipboard{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #FFF;
+    color: #26547c;
+    transition: 0.4s;
+    border-radius: .4rem;
+}
+.btn-clipboard:hover{
+    color: #FFF;
+    background-color: #26547c;
+}
+
+
 @media (max-width: 768px){
     .container-detalle-pago{
         width: 100%;

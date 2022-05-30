@@ -7,34 +7,61 @@ body{
     padding: 0!important
 }
 .section-altpay{
-    height: 100vh;
-    background-color: #26547c;
+    padding: 1rem;
+    position: relative;
+    height: fit-content;
+    background-image: url('../assets/section-altpay.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    font-size: 1.5rem;
 }
 .section-altpay-container{
+    min-height: 100vh;
+    height: fit-content;
     height: 100vh;
     padding: 0 5vw!important;
 }
 .logo-altpay{
     width: 500px;
 }
+.title{
+    color:#26547c;
+}
 .text-logo{
     color: white;
+}
+.col-altpay{
+    display: flex;
+}
+.col-altpay:nth-child(1){
+    justify-content: end;
+    padding-right: 2rem;
+}
+.col-altpay:nth-child(2){
+    justify-content: start;
+    padding-left: 2rem;
 }
 
 .section-login{
     height: 100vh;
-    background-image: url("../assets/section-login.jpg");
+    background-color: #FFF;
     background-size: cover;
     background-position: center;
+    color: #000;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .button{
     text-align: center;
     text-decoration: none;
-    border-radius: 1rem;
+    border-radius: .6rem;
     max-width: fit-content;
 }
 .button-register{
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: #26547c;
     color: #FFF;
 }
@@ -43,7 +70,7 @@ body{
     color: #26547c;
 }
 .button-login{
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: #FFF;
     color: #26547c;
 }
@@ -66,19 +93,119 @@ body{
     background-color: #FFF;
     padding: 0!important;
 }
-.col-login:nth-child(1){
-    justify-content: end;
+.col-login{
+    background-color: rgba(245, 245, 245, 0.795);
+    padding: 2rem;
 }
-.col-login:nth-child(2){
+.info-card{
+    color: #06d7a0;
+}
+.carousel{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
+.slider-item{
+    background-color: #26547c;
+    color: #FFF;
+    height: 100%;
+}
+.slider-content{
+    height: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-.col-login:nth-child(3){
-    justify-content: start;
+.section-contacto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contacto-title{
+    color: #26547c;
+}
+.img-card-contacto{
+    max-width: 100px;
+}
+.redes-title{
+    color:#06d7a0;
 }
 
+.rounded-social-buttons {
+  text-align: center;
+}
 
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:before {
+  font-family: "FontAwesome";
+ 
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:before {
+  font-family: "FontAwesome";
+  
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:before {
+  font-family: "FontAwesome";
+  
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  border-color: #125688;
+}
 
 @media (max-width: 768px){
     .col-login{
@@ -98,5 +225,13 @@ body{
     }
     .logo-altpay{
         width: 200px;
+    }
+    .col-altpay:nth-child(1){
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .col-altpay:nth-child(2){
+        justify-content: center;
+        padding: 1rem 0;
     }
 }

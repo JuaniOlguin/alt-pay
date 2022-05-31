@@ -46,13 +46,19 @@ body{
 }
 
 .section-login{
-    height: 100vh;
+    min-height: fit-content;
     background-color: #FFF;
     background-size: cover;
     background-position: center;
     color: #000;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.section-login-container{
+    /* min-height: 100vh;
+    height: fit-content;
+    height: 100vh; */
+    padding: 0 5vw!important;
 }
 .button{
     text-align: center;
@@ -66,8 +72,8 @@ body{
     color: #FFF;
 }
 .button-register:hover{
-    background-color: #FFF;
-    color: #26547c;
+    background-color: #06d7a0;
+    color: #FFF;
 }
 .button-login{
     padding: 1.2rem;
@@ -75,7 +81,7 @@ body{
     color: #26547c;
 }
 .button-login:hover{
-    background-color: #26547c;
+    background-color: #06d7a0;
     color: #FFF;
 }
 
@@ -90,40 +96,35 @@ body{
     background-position: center;
 }
 .section-info-container{
-    background-color: #FFF;
+    background-color: #26547c;
     padding: 0!important;
 }
 .col-login{
-    background-color: rgba(245, 245, 245, 0.795);
+    background-color: rgba(231, 230, 230, 0.856);
     padding: 2rem;
 }
 .info-card{
     color: #06d7a0;
 }
-.carousel{
-    height: 100%;
-}
-.carousel-inner{
-    height: 100%;
-}
 .slider-item{
     background-color: #26547c;
     color: #FFF;
-    height: 100%;
+    /* height: 100%; */
 }
 .slider-content{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .section-contacto{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 2rem;
 }
 .contacto-title{
     color: #26547c;
